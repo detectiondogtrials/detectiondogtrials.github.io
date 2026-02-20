@@ -21,8 +21,127 @@
 			
 			  gtag('config', 'G-7KW0J1GDSW');
 			</script>
+		<!-- Date Change Banner Styles -->
+		<style>
+			.date-change-banner {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 100000;
+				background: linear-gradient(90deg, #182B49, #00629B, #182B49);
+				border-bottom: 3px solid #FFCD00;
+				overflow: hidden;
+				padding: 0;
+				box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+			}
+
+			.banner-track {
+				display: flex;
+				white-space: nowrap;
+				animation: marquee 18s linear infinite;
+			}
+
+			.banner-track:hover {
+				animation-play-state: paused;
+			}
+
+			.banner-content {
+				display: inline-flex;
+				align-items: center;
+				padding: 10px 0;
+				flex-shrink: 0;
+			}
+
+			.banner-content span {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 800;
+				font-size: 0.95rem;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				padding: 0 2rem;
+			}
+
+			.banner-text {
+				color: #ffffff;
+			}
+
+			.banner-date {
+				color: #FFCD00;
+			}
+
+			.banner-icon {
+				color: #FFCD00;
+				font-size: 1.1rem;
+				padding: 0 0.3rem !important;
+				animation: pulse-icon 1.5s ease-in-out infinite;
+			}
+
+			@keyframes marquee {
+				0%   { transform: translateX(0); }
+				100% { transform: translateX(-50%); }
+			}
+
+			@keyframes pulse-icon {
+				0%, 100% { opacity: 1; transform: scale(1); }
+				50%      { opacity: 0.5; transform: scale(1.3); }
+			}
+
+			/* Push page content below fixed banner */
+			body.landing {
+				padding-top: 44px;
+			}
+
+			@media screen and (max-width: 736px) {
+				.banner-content span {
+					font-size: 0.8rem;
+					padding: 0 1.2rem;
+				}
+				.banner-content {
+					padding: 8px 0;
+				}
+				body.landing {
+					padding-top: 38px;
+				}
+			}
+		</style>
 	</head>
 	<body class="landing is-preload">
+
+		<!-- Date Change Announcement Banner -->
+		<div class="date-change-banner">
+			<div class="banner-track">
+				<div class="banner-content">
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+				</div>
+				<!-- Duplicate for seamless loop -->
+				<div class="banner-content">
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-text">DATE CHANGED</span>
+					<span class="banner-icon">&#9733;</span>
+					<span class="banner-date">New Date: Sunday, May 3rd, 2026</span>
+				</div>
+			</div>
+		</div>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -38,7 +157,7 @@
 					<img src="images/tritondoglogo.png" alt="Logo" class="logo-img" />
 					<h2><span style="color: #FFCD00;">Detection Dog Trials 2026 @ UCSD</span></h2>
 					<p>
-					March 1st, 2026<br />
+					May 3rd, 2026<br />
 					organized by the <br />
 					<a href="https://cclab.ucsd.edu">Comparative Cognition Laboratory</a> <br />
 					at the University of California, San Diego.<br />
@@ -58,7 +177,7 @@
 									<span style="color: #FFCD00;">Participate</span> in scientific studies, <br/>
 									<span style="color: #FFCD00;">And win</span> trophies and prizes!</h3>
 								<p>Join us for the second annual Detection Dog Trial hosted by the <a href="https://cclab.ucsd.edu">Comparative Cognition Laboratory</a> at UC San Diego, 
-									led by Professor Federico Rossano. The event will take place on March 1st, 2026. This event will put your dog’s cognitive and behavioral abilities 
+									led by Professor Federico Rossano. The event will take place on May 3rd, 2026. This event will put your dog’s cognitive and behavioral abilities 
 									to the test in a professionally judged competition, while contributing to our research on detection dogs.
 									We recently opened the first dog cognition laboratory in California, dedicated to studying the remarkable abilities of both pet and working dogs. In March 2025, we successfully ran our first detection dog study event and are collecting additional data this year. 
 									Our dog research has been featured in the Netflix documentary  <a href="https://www.netflix.com/title/81681888"><i>Inside the Mind of a Dog</i></a> and <a href="https://cclab.ucsd.edu/in-the-news/">major news outlets</a>, including 
@@ -77,7 +196,7 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/officerk9.jpeg" alt="" /></div><div class="content">
 								<h2><span style="color: #FFCD00;">Professional</span> Detection Dog Trial<br />
-								<i>March <span style="color: #FFCD00;"></span> 2026 @UCSD</i></h2>
+								<i>May <span style="color: #FFCD00;"></span> 2026 @UCSD</i></h2>
 								<p>We invite professional detection dog handlers and their highly trained four-legged partners to participate in our professional detection trials—free of charge. 
 								This one-day event will feature expertly designed trials, including indoor, outdoor, and vehicle searches tailored for narcotics (heroin, cocaine, methamphetamine), explosives (basic explosives), and firearm (guns, ammunition) detection dogs.
 								Compete to showcase your skills for a chance to win trophies and prizes while contributing data to our research on the remarkable abilities of professional handler-dog teams. 
